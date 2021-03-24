@@ -18,7 +18,7 @@ This environment grabs the latest published versions of `solar-data-tools` and `
 
 
 ## Create `pvi-user` environment
-This environment installs all the necessary support software, but does not install `solar-data-tools` or `statistical-clear-sky` from Anaconda. Instead, these packages are cloned from GitHub (pre-published coded) and installed as "editable" packages with pip.
+This environment installs all the necessary support software, but does not install `solar-data-tools` or `statistical-clear-sky` from Anaconda. Instead, these packages are cloned from GitHub (pre-published coded) and installed as "editable" packages with pip. This allows for local editing and testing of the packages and is intending for _developers_ of PVInsight software.
 1) Clone [`solar-data-tools`](https://github.com/slacgismo/solar-data-tools/) and [`statistical-clear-sky`](https://github.com/slacgismo/StatisticalClearSky) to your local machine
 2) Create a new environment from the `pvi-dev.yaml` file. Instructions: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 3) Run the following two commands: `pip install -e path/to/solar-data-tools` and `pip install -e path/to/statistical-clear-sky'

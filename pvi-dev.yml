@@ -21,12 +21,9 @@ dependencies:
   - cassandra-driver
   - openblas
   - smart_open
-  - mosek
+  - cvxpy
+  - scs
   - pip:
-    - cvxpy
     - dill
-    - ecos
     - future
     - multiprocess
-    - osqp
-    - scs

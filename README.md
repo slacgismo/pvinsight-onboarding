@@ -1,4 +1,4 @@
-# pvinsight-onboarding
+# Pvinsight Onboarding
 
 This document is intended to help new collaborators to the PVInsight project get set up with a Python environment for running PVInsight algorithms. We recommend using miniconda as a package and virtual environment manager. 
 

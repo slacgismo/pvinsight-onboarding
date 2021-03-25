@@ -42,5 +42,4 @@ Ran 752 tests in 44.747s
 FAILED (SKIP=147, errors=1, failures=1)
 ```
 
-That is okay. If you get a large number of errors, then something probably went wrong.
-
+That is okay. If you get a large number of errors, then something probably went wrong with the installation of CVXPY and associated backend numerical solvers. Please contact us through our issues page, and we will try to get back to you within a week.

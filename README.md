@@ -25,7 +25,7 @@ This environment installs all the necessary support software, but does not insta
 %load_ext autoreload
 %autoreload 2
 ```
-With this setup, changes to the codebase are immediately propogated into the current Notebooks session, eliminating the need to reload data sets while testing new functions.
+With this setup, changes to the codebase are immediately propagated into the current Notebooks session, eliminating the need to reload data sets while testing new functions.
 
 1) Clone [`solar-data-tools`](https://github.com/slacgismo/solar-data-tools/) and [`statistical-clear-sky`](https://github.com/slacgismo/StatisticalClearSky) to your local machine
 2) Create a new environment from the `pvi-dev.yaml` file. Instructions: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file

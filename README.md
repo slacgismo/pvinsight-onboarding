@@ -12,13 +12,21 @@ There are two YAML files included in this repository: `pvi-dev` and `pvi-user`. 
 
 ## Create `pvi-user` environment
 This environment grabs the latest published versions of `solar-data-tools` and `statistical-clear-sky` from Anaconda, and installs them in an environment with all the necessary support software. This is intended for _users_ of PVInsight software.
+
 1) Create a new environment from the `pvi-user.yaml` file. Instructions: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 2) Activate the new environment: `conda activate pvi-user` (“pvi-user” is the name of the environment)
 3) Check that everything is installed and working correctly by running `nosetests cvxpy` from within the new environment 
 
 
 ## Create `pvi-dev` environment
-This environment installs all the necessary support software, but does not install `solar-data-tools` or `statistical-clear-sky` from Anaconda. Instead, these packages are cloned from GitHub (pre-published coded) and installed as "editable" packages with pip. This allows for local editing and testing of the packages and is intending for _developers_ of PVInsight software.
+This environment installs all the necessary support software, but does not install `solar-data-tools` or `statistical-clear-sky` from Anaconda. Instead, these packages are cloned from GitHub (pre-published coded) and installed as "editable" packages with pip. This allows for local editing and testing of the packages and is intending for _developers_ of PVInsight software. After following these instructions, the developer can make changes in their local `solar-data-tools` and `statistical-clear-sky` repositories, and the environment will point to the local version. I highly recommend using this feature along with Jupyter Notebooks and the Jupypter auto-reload magic:
+
+```python
+%load_ext autoreload
+%autoreload 2
+```
+With this setup, changes to the codebase are immediately propogated into the current Notebooks session, eliminating the need to reload data sets while testing new functions.
+
 1) Clone [`solar-data-tools`](https://github.com/slacgismo/solar-data-tools/) and [`statistical-clear-sky`](https://github.com/slacgismo/StatisticalClearSky) to your local machine
 2) Create a new environment from the `pvi-dev.yaml` file. Instructions: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 3) Run the following two commands: `pip install -e path/to/solar-data-tools` and `pip install -e path/to/statistical-clear-sky`

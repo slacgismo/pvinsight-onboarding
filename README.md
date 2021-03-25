@@ -29,9 +29,9 @@ This environment installs all the necessary support software, but does not insta
 You may find that there are a small number of errors. I currently get the following:
 
 ```
-Ran 2529 tests in 42.750s
+Ran 752 tests in 44.747s
 
-FAILED (SKIP=2, errors=2, failures=2)
+FAILED (SKIP=147, errors=1, failures=1)
 ```
 
 That is okay. If you get a large number of errors, then something probably went wrong.

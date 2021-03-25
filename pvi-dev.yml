@@ -14,6 +14,7 @@ dependencies:
   - pandas
   - pip
   - nose
+  - pytest
   - numpy
   - requests
   - scikit-learn
@@ -21,6 +22,7 @@ dependencies:
   - cassandra-driver
   - openblas
   - smart_open
+  - mosek
   - cvxpy
   - scs
   - pip:

@@ -15,6 +15,7 @@ dependencies:
   - pandas
   - pip
   - nose
+  - pytest
   - numpy
   - requests
   - scikit-learn

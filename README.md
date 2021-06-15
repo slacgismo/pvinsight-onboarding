@@ -31,8 +31,8 @@ With this setup, changes to the codebase are immediately propagated into the cur
 
 1) Clone [`solar-data-tools`](https://github.com/slacgismo/solar-data-tools/) and [`statistical-clear-sky`](https://github.com/slacgismo/StatisticalClearSky) to your local machine
 2) Create a new environment from the `pvi-dev.yaml` file included in this repository, by running `conda env create -f path/to/pvi-dev.yml`
-3) Run the following two commands: `pip install -e path/to/solar-data-tools` and `pip install -e path/to/statistical-clear-sky`
-4) Activate the new environment: `conda activate pvi-dev` (“pvi-dev” is the name of the environment)
+3) Activate the new environment: `conda activate pvi-dev` (“pvi-dev” is the name of the environment)
+4) Run the following two commands: `pip install -e path/to/solar-data-tools` and `pip install -e path/to/statistical-clear-sky`
 5) Check that everything is installed and working correctly by running `nosetests cvxpy` from within the new environment 
 
 ## Comment on the final test step

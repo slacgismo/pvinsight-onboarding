@@ -6,12 +6,13 @@ channels:
   - slacgismo
   - conda-forge
 dependencies:
-  - jupyter
+  - python=3.9
+  - jupyterlab
+  - ipympl
   - ipython
   - matplotlib
   - scipy
   - seaborn
-  - python
   - pandas
   - pip
   - nose
@@ -21,7 +22,6 @@ dependencies:
   - scikit-learn
   - s3fs
   - solar-data-tools
-  - statistical-clear-sky
   - cassandra-driver
   - openblas
   - smart_open

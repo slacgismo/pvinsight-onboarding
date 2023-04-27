@@ -3,14 +3,14 @@ channels:
   - defaults
   - anaconda
   - mosek
-  - conda-forge
 dependencies:
-  - python=3.9
+  - python>=3.10
   - jupyterlab
   - ipympl
   - ipython
   - matplotlib
   - scipy
+  - pvlib
   - seaborn
   - pandas
   - pip
@@ -20,13 +20,13 @@ dependencies:
   - requests
   - scikit-learn
   - s3fs
+  - boto3
   - cassandra-driver
   - openblas
   - smart_open
   - mosek
-  - cvxpy
-  - scs
+  - haversine
+  - pykml
+  - cmake
   - pip:
-    - dill
-    - future
-    - multiprocess
+    - cvxpy

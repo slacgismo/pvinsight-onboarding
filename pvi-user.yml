@@ -4,14 +4,14 @@ channels:
   - anaconda
   - mosek
   - slacgismo
-  - conda-forge
 dependencies:
-  - python=3.9
+  - python>=3.10
   - jupyterlab
   - ipympl
   - ipython
   - matplotlib
   - scipy
+  - pvlib
   - seaborn
   - pandas
   - pip
@@ -21,14 +21,14 @@ dependencies:
   - requests
   - scikit-learn
   - s3fs
-  - solar-data-tools
+  - boto3
   - cassandra-driver
   - openblas
   - smart_open
   - mosek
-  - cvxpy
-  - scs
+  - haversine
+  - pykml
+  - cmake
+  - solar-data-tools
   - pip:
-    - dill
-    - future
-    - multiprocess
+    - mosek
